@@ -12,8 +12,16 @@ namespace PigDice
         static void Main(string[] args)
         {
             ///welcome screen
-            Console.WriteLine("WELCOME TO PIG'S DIE!!!<('@')>");
             
+                Console.WriteLine("WELCOME TO PIG'S DIE!!!<('@')>");
+                Console.WriteLine("-Press enter to roll die.");
+                Console.WriteLine("-Add up each roll to get your turn points.");
+                Console.WriteLine("-Be careful not to roll a 1. That will make you loose all your turn points.");
+                Console.WriteLine("-Press B to bank your turn points towards your game points.");
+                Console.WriteLine("-Get 100 points to win");
+
+            
+
 
             ///rolls random interger between 1 and 6
             int turnTotal = 0;
@@ -28,7 +36,7 @@ namespace PigDice
                     if (die == 1)
                     {
                         turnTotal = 0;
-                        Console.WriteLine("Your turn is over");
+                        Console.WriteLine("Let's go again!");
                         break;
                     }
                     else
